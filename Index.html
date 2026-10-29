@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVida | Cuidado del medio ambiente</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f8e9;
+            color: #26382b;
+        }
+
+        header {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #1b5e20;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 1000px;
+            background-color: white;
+            border-radius: 12px;
+        }
+
+        h2 {
+            color: #2e7d32;
+        }
+
+        .boton {
+            background-color: #2e7d32;
+            color: white;
+            padding: 12px 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .boton:hover {
+            background-color: #1b5e20;
+        }
+
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 650px;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="inicio">
+    <h1>🌿 EcoVida</h1>
+    <p>Pequeñas acciones, grandes cambios para nuestro planeta.</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#problemas">Problemas ambientales</a>
+    <a href="#consejos">Consejos</a>
+    <a href="#colombia">Colombia</a>
+    <a href="#participa">Participa</a>
+</nav>
+
+<section>
+    <h2>Bienvenidos a EcoVida</h2>
+    <p>
+        EcoVida es un sitio web informativo que busca crear conciencia
+        sobre la importancia de cuidar el medio ambiente. Aquí aprenderás
+        cómo proteger la naturaleza y contribuir a un planeta más limpio.
+    </p>
+    <img
+        src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=80"
+        alt="Bosque verde de la naturaleza">
+</section>
+
+<section id="problemas">
+    <h2>Problemas ambientales</h2>
+
+    <h3>Contaminación</h3>
+    <p>
+        La contaminación del aire, del agua y del suelo afecta a los seres
+        vivos y deteriora los ecosistemas.
+    </p>
+
+    <h3>Deforestación</h3>
+    <p>
+        La tala excesiva de árboles destruye hábitats y reduce la
+        biodiversidad.
+    </p>
+
+    <h3>Cambio climático</h3>
+    <p>
+        El calentamiento global está modificando las temperaturas y los
+        patrones del clima, generando riesgos para las personas y la naturaleza.
+    </p>
+</section>
+
+<section id="consejos">
+    <h2>¿Cómo podemos cuidar el medio ambiente?</h2>
+
+    <ul>
+        <li>Separar los residuos y reciclar correctamente.</li>
+        <li>Ahorrar agua y evitar desperdiciarla.</li>
+        <li>Apagar las luces que no necesitamos.</li>
+        <li>Reducir el uso de plásticos desechables.</li>
+        <li>Cuidar los árboles, los ríos y los animales.</li>
+        <li>Evitar arrojar basura en las calles.</li>
+    </ul>
+</section>
+
+<section id="colombia">
+    <h2>La naturaleza en Colombia</h2>
+    <p>
+        Colombia posee una gran diversidad de ecosistemas, plantas y animales.
+        Sus bosques, ríos, montañas y mares son esenciales para la vida.
+        Protegerlos es una responsabilidad compartida.
+    </p>
+    <img
+        src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1000&q=80"
+        alt="Paisaje natural de montañas y vegetación">
+</section>
+
+<section id="participa">
+    <h2>Mini reto ecológico 🌎</h2>
+    <p>¿Cuál de estas acciones ayuda a reducir los residuos?</p>
+
+    <button class="boton" onclick="comprobarRespuesta(false)">
+        Usar más productos desechables
+    </button>
+
+    <button class="boton" onclick="comprobarRespuesta(true)">
+        Reutilizar una botella
+    </button>
+
+    <button class="boton" onclick="comprobarRespuesta(false)">
+        Arrojar basura al suelo
+    </button>
+
+    <p id="resultado" aria-live="polite"></p>
+</section>
+
+<footer>
+    <p>©️ 2026 EcoVida | Cuidar el planeta está en nuestras manos 🌱</p>
+    <p>Proyecto escolar sobre el cuidado del medio ambiente.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
